@@ -85,6 +85,41 @@ Example JSON return
 
 ```javascript
 ALFAcoins.getRates()
+//returns a JSON array of all coin types and all currency rates for each type
+```
+
+Example (truncated) JSON return (selective currencies listed, actual list of currencies is extensive)
+
+```javascript
+{
+  "BTC": [
+    {
+      "code": "AUD",
+      "rate": 5526.335314
+    },
+    {
+      "code": "CAD",
+      "rate": 5316.65607
+    },
+    {
+      "code": "EUR",
+      "rate": 3411.712203
+    },
+    {
+      "code": "GBP",
+      "rate": 3075.586959
+    },
+    {
+      "code": "USD",
+      "rate": 3902.53389
+    }
+  ],
+  "LTC": [...],
+  "ETH": [...],
+  "BCH": [...],
+  ...
+  ]
+}
 ```
 
 ### POST Methods
