@@ -3,6 +3,8 @@ A JavaScript implementation of the ALFAcoins API
 
 This library provides a JavaScript implementation of the https://www.alfacoins.com/ API - A Bitcoin & cryptocurrency payment processing system.
 
+Use this API to accept and send Bitcoin, Litecoin, Ethereum, Bitcoin Cash, Dash and XRP cryptocurrency payments/refunds.
+
 Core ALFAcoins API: https://www.alfacoins.com/developers
 
 
