@@ -130,17 +130,25 @@ Example (truncated) JSON return (selective currencies listed, actual list of cur
 
 ### POST Methods
 
+For convienience all of the post methods accept a standard customizable configuration object matching the core ALFAcoins API docs: https://www.alfacoins.com/developers
+
 ```javascript
 ALFAcoins.postBitSend(config)
+//send cryptocurrency to a specific address: https://www.alfacoins.com/developers#post_requests-bitsend
 
 ALFAcoins.postBitSendStatus(config)
+//check the status of a bitSend request: https://www.alfacoins.com/developers#post_requests-bitsend_status
 
 ALFAcoins.postCreateOrder(config)
+//create an order for payment: https://www.alfacoins.com/developers#post_requests-create
 
 ALFAcoins.postOrderStatus(config)
+//get status of created order: https://www.alfacoins.com/developers#post_requests-status
 
 ALFAcoins.postStatistics(config)
+//get merchants balance and send statistics: https://www.alfacoins.com/developers#post_requests-stats
 
 ALFACoins.postRefund(config)
+//refund a completed order: https://www.alfacoins.com/developers#post_requests-refund
 ```
 
