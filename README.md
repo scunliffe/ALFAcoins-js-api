@@ -7,6 +7,10 @@ Use this API to accept and send Bitcoin, Litecoin, Ethereum, Bitcoin Cash, Dash 
 
 Core ALFAcoins API: https://www.alfacoins.com/developers
 
+## Security Note
+
+Although the GET based API calls can be made from anywhere, when making POST based API calls using your **secret_key/password** you will want to avoid serving these 2 values up to a public website as a malicious user could scrape the credentials and make calls without your consent. Only make these calls from a private/protected environment.
+
 
 ## Setup
 
