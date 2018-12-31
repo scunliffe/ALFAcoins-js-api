@@ -40,32 +40,36 @@ Include the single script file into your page:
 ```javascript
     ALFAcoins.getFees()
     //returns a JSON map of coin types, each with a map of deposit, withdrawal, and bitsend comissions/fees:
-    /*
-      example JSON return
-      {
-        "bitcoin": {
-          "deposit": {
-            "commission": "0.99%",
-            "network_fee": "0 BTC"
-          },
-          "withdrawal": {
-            "commission": "0%",
-            "network_fee": "0.00005 BTC"
-          },
-          "bitsend": {
-            "commission": "0.99%",
-            "network_fee": "0.00005 BTC"
-          }
+```
+
+Example (truncated) JSON return
+
+```javascript
+    {
+      "bitcoin": {
+        "deposit": {
+          "commission": "0.99%",
+          "network_fee": "0 BTC"
         },
-        "litecoin": {...},
-        "ethereum": {...},
-        "bitcoincash": {...},
-        "dash": {...},
-        "xrp": {...},
-        "litecointestnet": {...}
-      }
-    */
-    
+        "withdrawal": {
+          "commission": "0%",
+          "network_fee": "0.00005 BTC"
+        },
+        "bitsend": {
+          "commission": "0.99%",
+          "network_fee": "0.00005 BTC"
+        }
+      },
+      "litecoin": {...},
+      "ethereum": {...},
+      "bitcoincash": {...},
+      "dash": {...},
+      "xrp": {...},
+      "litecointestnet": {...}
+    }
+```
+
+```javascript
     ALFAcoins.getRate(currencyA, currencyB)
     
     ALFAcoins.getRates()
