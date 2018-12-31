@@ -71,7 +71,19 @@ Example (truncated) JSON return
 
 ```javascript
     ALFAcoins.getRate(currencyA, currencyB)
-    
+    //e.g. ALFAcoins.getRate("BTC", "USD")
+    //returns a JSON array with a single value for the requested rate
+```
+
+Example JSON return
+
+```javascript
+[
+  "3927.60000000"
+]
+```
+
+```javascript
     ALFAcoins.getRates()
 ```
 
